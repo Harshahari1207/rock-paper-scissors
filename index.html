@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Rock-Paper-Scissor</title>
-</head>
-<body>
-    <h1>Rock Paper Scissor Web Game</h1>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissor</h1>
+      <h2>First 5 rounds winner will win the Game.</h2>
+      <div class="weaponsDiv">
+        <div class="card">
+          <div class="imgDiv"><h1 class="rockWeapon">✊</h1></div>
+          <h3 class="weaponName">Rock</h3>
+        </div>
+        <div class="card">
+          <div class="imgDiv"><h1 class="paperWeapon">🖐</h1></div>
+          <h3 class="weaponName">Paper</h3>
+        </div>
+        <div class="card">
+          <div class="imgDiv"><h1 class="scissorsWeapon">✌</h1></div>
+          <h3 class="weaponName">Scissor</h3>
+        </div>
+      </div>
+
+      <div class="scoreCard">
+        <div class="player">
+          <h3>Player</h3>
+          <h4 class="playerScore">0</h4>
+        </div>
+        <div class="computer">
+          <h3>Computer</h3>
+          <h4 class="computerScore">0</h4>
+        </div>
+      </div>
+      <div class="winnerDecleration">
+        <h2></h2>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

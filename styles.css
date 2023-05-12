@@ -1,0 +1,60 @@
+*{
+    --br: 5px;
+    --pd: 5px;
+    --gap: 5px;
+
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weaponsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: calc(var(--gap)*15);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgDiv{
+    width: 300px;
+    height: 300px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgDiv h1{
+    font-size: 150px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+}
+.imgDiv h1:hover{
+    font-size: 200px;
+    
+}
+
+.scoreCard{
+    display: flex;
+    align-items: center;
+    gap: calc(var(--gap)*10);
+}
