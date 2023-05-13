@@ -55,6 +55,12 @@ body{
 
 .scoreCard{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainSocreCard{
+    display: flex;
     align-items: center;
     gap: calc(var(--gap)*10);
 }
