@@ -45,6 +45,7 @@ body {
   background-color: var(--nav-after-back);
 }
 .logo {
+  cursor: pointer;
   width: 80px;
   height: 80px;
   display: flex;
@@ -141,7 +142,7 @@ body {
   opacity: 1;
   background-color: var(--nav-after);
   border-radius: var(--br);
-  gap: calc(var(--gap)*3);
+  gap: calc(var(--gap) * 3);
   display: flex;
   flex-direction: column;
   align-items: center;
