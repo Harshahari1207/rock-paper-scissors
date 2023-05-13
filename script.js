@@ -1,3 +1,6 @@
+const logo = document.querySelector(".logoImg");
+const body = document.querySelector(".body");
+
 const rockWeapon = document.querySelector(".rockWeapon");
 const paperWeapon = document.querySelector(".paperWeapon");
 const scissorsWeapon = document.querySelector(".scissorsWeapon");
@@ -14,6 +17,21 @@ const computerWeaponDisplayer = document.querySelector(
 );
 const restart = document.querySelector(".restart");
 
+let logoClicked = true;
+const changeLogo = () =>{
+  if(logoClicked){
+    logoClicked = false;
+    logo.src = "./img/light.png";
+    body.classList.add("darkmode");
+    body.classList.remove("lightmode");
+  }else{
+    logoClicked = true;
+    logo.src = "./img/dark.png";
+    body.classList.add("lightmode");
+    body.classList.remove("darkmode");
+  }
+}
+logo.addEventListener("click", changeLogo);
 roundWinner.textContent = "";
 winnerDeclaration.textContent = "";
 let playerScore = 0;
@@ -32,7 +50,7 @@ const game = (event) => {
   let computer = computerSelection(3);
   const setPlayerWeapon = () => {
     playerWeaponDisplayer.textContent = `Player (${event.target.dataset.weapon})`;
-    computerWeaponDisplayer.textContent = `computer (${computer})`;
+    computerWeaponDisplayer.textContent = `Computer (${computer})`;
   };
   if (player == "rock" && computer == "scissors") {
     playerScore++;

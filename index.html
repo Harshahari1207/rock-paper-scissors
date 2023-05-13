@@ -7,40 +7,44 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Rock-Paper-Scissor</title>
   </head>
-  <body>
+  <body class="body lightmode">
     <div class="winnerDeclaration">
       <div class="winnerDeclarationDiv">
-        <h2 class="winner"> Winner</h2>
+        <h2 class="winner">Winner</h2>
         <button class="restart">Play Again</button>
       </div>
-
     </div>
     <div class="nav">
       <div class="logo">
-        <img src="" alt="">
+        <img class="logoImg" src="./img/dark.png" alt="" />
       </div>
       <h1>Rock Paper Scissor</h1>
     </div>
     <div class="container">
-      
       <h2>First 5 rounds winner will win the Game.</h2>
       <div class="weaponsDiv">
         <div class="card">
-          <div class="imgDiv"><h1 class="rockWeapon" data-weapon="rock">✊</h1></div>
+          <div class="imgDiv">
+            <h1 class="rockWeapon" data-weapon="rock">✊</h1>
+          </div>
           <h3 class="weaponName">Rock</h3>
         </div>
         <div class="card">
-          <div class="imgDiv"><h1 class="paperWeapon" data-weapon="paper">🖐</h1></div>
+          <div class="imgDiv">
+            <h1 class="paperWeapon" data-weapon="paper">🖐</h1>
+          </div>
           <h3 class="weaponName">Paper</h3>
         </div>
         <div class="card">
-          <div class="imgDiv"><h1 class="scissorsWeapon" data-weapon="scissors">✌</h1></div>
+          <div class="imgDiv">
+            <h1 class="scissorsWeapon" data-weapon="scissors">✌</h1>
+          </div>
           <h3 class="weaponName">Scissor</h3>
         </div>
       </div>
 
       <div class="scoreCard">
-        <h4 class="roundWinner"> </h4>
+        <h4 class="roundWinner"></h4>
         <div class="mainSocreCard">
           <div class="player">
             <h3 class="playerWeaponDisplayer">Player</h3>
@@ -52,8 +56,13 @@
           </div>
         </div>
       </div>
-      
     </div>
+    <footer>
+      <p>Copyright © 2023 Harsha</p>
+      <a href="https://github.com/Harshahari1207" target="">
+        <img src="img/icons8-github.svg" alt=""
+      /></a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

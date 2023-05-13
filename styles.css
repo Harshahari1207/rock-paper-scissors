@@ -1,108 +1,173 @@
-*{
-    --br: 5px;
-    --pd: 5px;
-    --gap: 5px;
+@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
 
-    box-sizing: border-box;
-    border: 0;
-    padding: 0;
+* {
+  --br: 5px;
+  --pd: 5px;
+  --gap: 5px;
+
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.darkmode {
+  --primary: rgb(223, 223, 126);
+  --light-cement: rgb(74, 60, 60);
+  --white: rgb(22, 22, 22);
+  --nav-after-back: #0a2647;
+  --nav-after: #495579;
+  --winner-declaration: rgb(65, 65, 103);
+  --secondary: rgb(233, 185, 185);
+}
+.lightmode {
+  --primary: #1746a2;
+  --secondary: #5f9df7;
+  --light-cement: #fff7e9;
+  --white: rgb(237, 234, 234);
+  --nav-after-back: #9ba4b5;
+  --nav-after: #d5b4b4;
+  --winner-declaration: rgba(112, 132, 164, 0.2);
+}
+body {
+  font-family: "Quantico", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+.nav {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--nav-after-back);
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--nav-after);
+}
+.logo img {
+  width: 50%;
+  height: 50%;
+}
+.container {
+  padding: calc(var(--pd) * 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 75vh;
+  background-color: var(--white);
+}
+.container h2 {
+  padding: calc(var(--pd) * 4);
+}
+.weaponsDiv {
+  padding: calc(var(--pd) * 5);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: calc(var(--gap) * 15);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.imgDiv {
+  width: 250px;
+  height: 250px;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgDiv h1 {
+  font-size: 150px;
+  cursor: pointer;
+  transform: rotate(-45deg);
+}
+.imgDiv h1:hover {
+  font-size: 200px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--pd) * 4);
 }
 
-.weaponsDiv{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: calc(var(--gap)*15);
+.mainSocreCard {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--gap) * 10);
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.player,
+.computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--pd) * 3);
 }
+.winnerDeclaration {
+  background-color: var(--winnerDeclaration);
 
-.imgDiv{
-    width: 300px;
-    height: 300px;
-    background-color: yellowgreen;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  backdrop-filter: blur(5px);
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 99;
 }
-.imgDiv h1{
-    font-size: 150px;
-    cursor: pointer;
-    transform: rotate(-45deg);
-}
-.imgDiv h1:hover{
-    font-size: 200px;
-    
-}
-
-.scoreCard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mainSocreCard{
-    display: flex;
-    align-items: center;
-    gap: calc(var(--gap)*10);
-}
-.player, .computer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.winnerDeclaration{
-    background-color: rgba(234, 114, 114, 0.2);
-    backdrop-filter: blur(5px);
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 99;
-}
-.winnerDeclarationDiv{
-    width: 30%;
-    height: 40%;
-    background-color: brown;
-    border-radius: var(--br);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+.winnerDeclarationDiv {
+  width: 30%;
+  height: 40%;
+  opacity: 1;
+  background-color: var(--nav-after);
+  border-radius: var(--br);
+  gap: calc(var(--gap)*3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.winnerDeclarationDiv button{
-    cursor: pointer;
-    padding: calc(var(--pd)*2);
-    border-radius: var(--br);
+.winnerDeclarationDiv button {
+  background-color: var(--nav-after-back);
+  color: var(--primary);
+  cursor: pointer;
+  padding: calc(var(--pd) * 2);
+  border-radius: var(--br);
 }
-.winnerDeclarationDiv button:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+.winnerDeclarationDiv button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
+footer {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-cement);
 }
