@@ -187,4 +187,10 @@ footer {
   .imgDiv h1:hover{
     font-size: 70px;
   }
+  .winnerDeclaration{
+    padding: calc(var(--pd)*4);
+  }
+  .winnerDeclaration .winnerDeclarationDiv h2{
+    font-size: 20px;
+  }
 }
