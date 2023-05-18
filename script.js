@@ -72,11 +72,11 @@ const game = (event) => {
     roundWinner.textContent = "Player Won the Round";
     playerScore++;
     setPlayerWeapon();
-  } else if ((player = "paper" && computer == "scissors")) {
+  } else if ((player == "paper" && computer == "scissors")) {
     computerScore++;
     roundWinner.textContent = "Computer Won the Round";
     setPlayerWeapon();
-  } else {
+  }else {
     roundWinner.textContent = "Tie";
     setPlayerWeapon();
   }

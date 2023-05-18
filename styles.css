@@ -188,7 +188,11 @@ footer {
     font-size: 70px;
   }
   .winnerDeclaration{
+    
     padding: calc(var(--pd)*4);
+  }
+  .winnerDeclarationDiv{
+    width: 70%;
   }
   .winnerDeclaration .winnerDeclarationDiv h2{
     font-size: 20px;
