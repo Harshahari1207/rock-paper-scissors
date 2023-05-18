@@ -173,81 +173,84 @@ footer {
   background-color: var(--light-cement);
 }
 @media only screen and (max-width: 900px) {
-  h1{
+  h1 {
     font-size: 30px;
   }
-  .imgDiv{
+  .imgDiv {
     max-width: 100px;
     max-height: 100px;
     border-radius: 450%;
   }
-  .imgDiv h1{
+  .imgDiv h1 {
     font-size: 50px;
   }
-  .imgDiv h1:hover{
+  .imgDiv h1:hover {
     font-size: 70px;
   }
-  .winnerDeclaration{
-    
-    padding: calc(var(--pd)*4);
+  .winnerDeclaration {
+    padding: calc(var(--pd) * 4);
   }
-  .winnerDeclarationDiv{
+  .winnerDeclarationDiv {
     width: 70%;
   }
-  .winnerDeclaration .winnerDeclarationDiv h2{
+  .winnerDeclaration .winnerDeclarationDiv h2 {
     font-size: 20px;
   }
 }
 
-
-@media only screen and (max-width: 550px){
-  body{
+@media only screen and (max-width: 550px) {
+  body {
     overflow-x: hidden;
     width: 100vw;
   }
-  h1{
+  h1 {
     font-size: 20px;
   }
-  h2{
+  h2 {
     font-size: 15px;
   }
-  h3{
+  h3 {
     font-size: 10px;
   }
-  p{
+  p {
     font-size: 10px;
   }
-  .nav{
-    
-    gap: calc(var(--gap)/2);
+  .nav {
+    height: 15vh;
+    gap: calc(var(--gap) / 2);
     justify-content: none;
   }
-  .logo{
+  .container{
+    height: 70vh;
+  }
+  footer{
+    height: 10vh;
+  }
+  .logo {
     width: 60px;
     height: 60px;
   }
-  .imgDiv{
+  .imgDiv {
     max-width: 40px;
     max-height: 40px;
     border-radius: 50%;
   }
-  .imgDiv h1{
+  .imgDiv h1 {
     font-size: 20px;
   }
-  .imgDiv h1:hover{
+  .imgDiv h1:hover {
     font-size: 30px;
   }
-  .weaponsDiv{
-    gap: calc(var(--gap)*5);
+  .weaponsDiv {
+    gap: calc(var(--gap) * 5);
   }
-  .winnerDeclaration{
-    
-    padding: calc(var(--pd)*4);
+  .winnerDeclaration {
+    padding: calc(var(--pd) * 4);
   }
-  .winnerDeclarationDiv{
+  .winnerDeclarationDiv {
     width: 70%;
   }
-  .winnerDeclaration .winnerDeclarationDiv h2{
+  .winnerDeclaration .winnerDeclarationDiv h2 {
     font-size: 20px;
   }
 }
