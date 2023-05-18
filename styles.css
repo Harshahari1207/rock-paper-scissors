@@ -200,7 +200,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
   body{
     overflow-x: hidden;
     width: 100vw;
@@ -218,15 +218,9 @@ footer {
     font-size: 10px;
   }
   .nav{
-    height: 10vh;
+    
     gap: calc(var(--gap)/2);
     justify-content: none;
-  }
-  .container{
-    height: 70vh;
-  }
-  footer{
-    height: 10vh;
   }
   .logo{
     width: 60px;
